@@ -1,0 +1,23 @@
+<ion-view title="Speakers">
+    <ion-content overflow-scroll="true" padding="true" class="has-header" ng-controller="speakersCtrl">
+        <h2>Speakers</h2>
+        <ion-list>
+            
+            <div ng-repeat="speaker in speakers">
+                <ion-item class="item-divider">
+                    {{speaker.name}}
+                </ion-item>
+                <ion-item class="item-thumbnail-left item-text-wrap">
+                    <img src="{{speaker.img}}">
+                    <h2><img src='img/Twitter.Png' height="15px" width="auto"> <a href='https://twitter.com/home?status={{speaker.twitter}} %23CSharpCon16 ' target=='_blank'>{{speaker.twitter}}</a></h2>
+                    <h4>{{speaker.title}}</h4>
+                    <!--<p> ** Session titles **</p>-->
+                    <!--<p> > for bio</p>-->
+                </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
+
+<!--<a href="#" onClick="window.open('https://twitter.com/elepago','_blank','location=yes');return false;"> Twitter @Elepago</a>-->

@@ -1,0 +1,15 @@
+<ion-view title="Agenda">
+    <ion-content overflow-scroll="true" padding="true" class="has-header" ng-controller="agendaCtrl">
+        <h3>19th March 2016</h3>
+        <ion-list>
+            <div ng-repeat="session in sessions">
+            <ion-item class="item-divider">{{session.timeSlot}}</ion-item>
+            <ion-item class="item-text-wrap">
+                Dev track: {{session.devTrack}}  <br>
+                Mobile/cloud track: {{session.mobileTrack}}
+            </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
